@@ -1,4 +1,4 @@
-__# Chapter 1
+# Chapter 1
 ## Eight Great Ideas in Computer Architecture
 1. ```Design for Moore's Law```: (设计跟随摩尔定律)
    + integrated circuit resources double every 18-24 months.
@@ -103,7 +103,7 @@ The energy for single transistor is:
 The power required per transistor:
 > $Power \propto 1/2 \times \text{Capacitive loading} \times Voltage^2 \times \text{Frequency switched}$
 
-## Pitfalls and Fallacies__
+## Pitfalls and Fallacies
 _Pitfall: Expecting the improvement of one aspect of a computer to increase overall performance by an amount proportional to the size of the improvement._<br>
 $T_{improvement} = \frac{T_{affected}}{\text{Amount of improvement}} + T_{unaffected}$
 > for example: $100\ seconds = \frac{\text{80 seconds}}{n} + \text{20 seconds}$. <br>
