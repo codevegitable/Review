@@ -1,3 +1,6 @@
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 # Chapter 1
 ## Eight Great Ideas in Computer Architecture
 1. ```Design for Moore's Law```: (设计跟随摩尔定律)
