@@ -1,4 +1,4 @@
-# Chapter 1
+__# Chapter 1
 ## Eight Great Ideas in Computer Architecture
 1. ```Design for Moore's Law```: (设计跟随摩尔定律)
    + integrated circuit resources double every 18-24 months.
@@ -79,3 +79,43 @@ Performance and Execution Time:
 CPU Time:
 + clock cycles: when events take place in hardware.
 + $\text{CPU execution time for a program / CPU time} = \text{CPU clock cycles for a program} \times \text{Clock cycle time} = \frac{\text{CPU clock cycles for a program}}{\text{Clock rate}}$
++ $\text{CPU clock cycles} = \text{Instructions for a program} \times \text{Average clock cycles per instruction(CPI)}$
++ summary: $\text{CPU time} = \text{Instructions count} \times CPI \times Clock cycle time = \frac{\text{Instructions count} \times CPI}{\text{Clock rate}}$
++ (in the example): $\text{CPU clock cycles} = \sum_{i=1}^n (CPI_i \times C_i)$, when finish the calculation, use the $CPI_i = \frac{\text{CPU clock cycles}_i}{Instruction count_i}$
+> The only reliable and complete measure of computer performance is time.<br>
+
+| Hardware or software component |Affects what |
+|:------------------------------:|:-----------:|
+|Algorithm|Instruction count, CPI|
+|Programming language|Instruction count, CPI|
+|Compiler|Instruction count, CPI|
+|Instruction set architecture|Instruction count, CPI, clock rate|
+
+## The Power Wall 
+The clock rate and the power increased together rapidly for decades, and flatten off recently.(the power meet the limit)
+
+The dynamic energy(for CMOS) depends on the capacitive loading of each transistor and the voltage applied:
+> $Energy \propto \text{Capacitive loading} \times Voltage^2$ (a transistor switches from 1-0-1 or 0-1-0)
+
+The energy for single transistor is:
+> $Energy \propto 1/2 \times \text{Capacitive loading} \times Voltage^2$
+
+The power required per transistor:
+> $Power \propto 1/2 \times \text{Capacitive loading} \times Voltage^2 \times \text{Frequency switched}$
+
+## Pitfalls and Fallacies__
+_Pitfall: Expecting the improvement of one aspect of a computer to increase overall performance by an amount proportional to the size of the improvement._<br>
+$T_{improvement} = \frac{T_{affected}}{\text{Amount of improvement}} + T_{unaffected}$
+> for example: $100\ seconds = \frac{\text{80 seconds}}{n} + \text{20 seconds}$. <br>
+> if CPU time is 5 times faster, then:<br>
+> $20\ seconds = \frac{\text{80 seconds}}{n} + \text{20 seconds}$, $0 = \frac{\text{80 seconds}}{n}$,<br> 
+> obviously wrong.
+
+_Fallacy: Computers at low utilization use little power._
+
+_Fallacy: Design for performance and design for energy efficiency are unrelated goals._
+
+_Pitfall: Using a subset of the performance equation as a performance metric._<br>
+> $MIPS\text{(millions of instructions per second)} = \frac{\text{Instruction count}}{\text{Execution time} \times 10^6} = \frac{\text{Clock rate}}{CPI \times 10^6}$<br>
+> mention that MIPS doesn't take into account the capabilities of the instructions. 
+
