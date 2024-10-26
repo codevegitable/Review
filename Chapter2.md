@@ -3,3 +3,5 @@
 </script>
 # Chapter 2
 ## Operations of the Computer Hardware
+(RISC-V的汇编自己看课本)
+
