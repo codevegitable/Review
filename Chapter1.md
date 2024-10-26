@@ -53,7 +53,7 @@ Application software -> System software -> Hardware
 > memory
 + memory: store the program and data, also run the program; cache memory(SRAM): buffer for the DRAM.
 
-基本概念：
+Conception：
 > instructions set architecture: interface between hardware and low-level software. 
 > application binary instruction: interface between instruction set and operating system.
 
