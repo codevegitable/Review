@@ -107,18 +107,18 @@ The power required per transistor:
 > $Power \propto 1/2 \times \text{Capacitive loading} \times Voltage^2 \times \text{Frequency switched}$
 
 ## Pitfalls and Fallacies
-_Pitfall: Expecting the improvement of one aspect of a computer to increase overall performance by an amount proportional to the size of the improvement._<br>
++ _Pitfall: Expecting the improvement of one aspect of a computer to increase overall performance by an amount proportional to the size of the improvement._<br>
 $T_{improvement} = \frac{T_{affected}}{\text{Amount of improvement}} + T_{unaffected}$
 > for example: $100\ seconds = \frac{\text{80 seconds}}{n} + \text{20 seconds}$. <br>
 > if CPU time is 5 times faster, then:<br>
 > $20\ seconds = \frac{\text{80 seconds}}{n} + \text{20 seconds}$, $0 = \frac{\text{80 seconds}}{n}$,<br> 
 > obviously wrong.
 
-_Fallacy: Computers at low utilization use little power._
++ _Fallacy: Computers at low utilization use little power._
 
-_Fallacy: Design for performance and design for energy efficiency are unrelated goals._
++ _Fallacy: Design for performance and design for energy efficiency are unrelated goals._
 
-_Pitfall: Using a subset of the performance equation as a performance metric._<br>
++ _Pitfall: Using a subset of the performance equation as a performance metric._<br>
 > $MIPS\text{(millions of instructions per second)} = \frac{\text{Instruction count}}{\text{Execution time} \times 10^6} = \frac{\text{Clock rate}}{CPI \times 10^6}$<br>
 > mention that MIPS doesn't take into account the capabilities of the instructions. 
 
