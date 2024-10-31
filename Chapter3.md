@@ -1,4 +1,4 @@
-<script type="text/javascript" async
+9<script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 # Chapter 3
@@ -59,7 +59,7 @@ So except the overflow, floating point number's calculation also exists underflo
 实验课都做了，阶数向大的对齐，尾数右移，然后尾数相加，最后规格化。
 
 ### Multiplication
-$\text{new exponent} = exponent_1 + exponent_2 - bias$ (对应到寄存器的表示中直接加起来就行了)
+$\text{new exponent} = exponent_1 + exponent_2 - bias$
 
 $\text{new fraction} = fraction_1 \times fraction_2$ (don't forget hidden bit)
 
